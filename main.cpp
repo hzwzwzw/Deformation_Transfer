@@ -36,7 +36,7 @@ void add_v4(TriMesh &mesh)
 }
 
 /* Main transformation function */
-TriMesh deformation_transfer(const TriMesh &s0, const TriMesh &s1, const TriMesh &t0)
+TriMesh deformation_transfer(TriMesh &s0, TriMesh &s1, TriMesh &t0)
 {
 }
 
@@ -59,6 +59,6 @@ int main(int argc, char *argv[])
 
     TriMesh t1 = deformation_transfer(s0, s1, t0);
 
-    OpenMesh::IO::write_mesh(t1, t1_path);
+    // OpenMesh::IO::write_mesh(t1, t1_path);
     return 0;
 }
