@@ -22,3 +22,5 @@ target_link_libraries(dt ${EIGEN3_LIBS} ${OPENMESH_INCLUDE_DIRS} OpenMeshCore Op
 
 # Set the output directory for the build
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)
+# Enable O3 optimization
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
