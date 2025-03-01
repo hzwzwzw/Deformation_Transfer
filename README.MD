@@ -31,9 +31,7 @@ $`Q_i = \tilde{V}_iV^{-1}_i`$刻画，其中$i$是面的序号，$`\tilde V`$代
 
 将上面变形代入损失函数，并利用F范数性质将求和变为矩阵的拼接，得到
 
-$$
-\begin{equation}\begin{aligned}E = \sum||S^T_i - T^T_i||^2_F\\ =\sum||(\hat V_{Ti}^{-1})^Tx^T - S_i^T||^2_F\\ =||\begin{pmatrix}(\hat V_{T1}^{-1})^T \\ (\hat V_{T2}^{-1})^T \\  ... \\ (\hat V_{TM}^{-1})^T\end{pmatrix}x^T-\begin{pmatrix}(\tilde V_{S1}V_{S1}^{-1})^T \\ \tilde V_{S2}V_{S2}^{-1})^T\\  ... \\ \tilde V_{SM}V_{SM}^{-1})^T\end{pmatrix}||^2_F\\ =||Ax^T-B||^2_F\end{aligned}\end{equation}
-$$
+<img src="README.assets/formula1.png" alt="result" style="zoom:50%;" />
 
 这个问题的解为：
 
